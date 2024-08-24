@@ -1,9 +1,9 @@
 function minDate(dates) {
-  //write you code here
+  // Use the reduce function to find the minimum date
+  return dates.reduce((min, current) => current < min ? current : min);
 }
 
 // Do not change the code
-
 var dates = [
   "2023/03/01",
   "2023/03/02",
@@ -37,4 +37,4 @@ var dates = [
   "2023/03/30",
 ];
 
-alert(minDate(dates));
+alert(minDate(dates)); // This will alert the earliest date in the array
